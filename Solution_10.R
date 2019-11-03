@@ -1,6 +1,7 @@
 # Exercise 10:
 
 library(tidyverse)
+library(NHSRdatasets)
 library(rmarkdown)
 
 if (!dir.exists("reports")) dir.create("reports")

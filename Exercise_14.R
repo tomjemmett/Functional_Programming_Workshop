@@ -1,5 +1,7 @@
 # Exercise 14
 
+library(tidyverse)
+
 # here's a quick look at reduce, accumulate and flatten. these functions aren't
 # as useful (in my opinion/experience!) as the map functions, but they do have
 # their uses.

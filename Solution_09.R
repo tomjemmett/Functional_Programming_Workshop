@@ -1,7 +1,7 @@
 # Exercise 9
 
 # let's use the previous solution
-source("Solution_8.R")
+source("Solution_08.R")
 
 # create a directory to store plots in, if it doesn't exist
 if (!dir.exists("plots")) dir.create("plots")

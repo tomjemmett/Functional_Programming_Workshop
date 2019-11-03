@@ -7,6 +7,10 @@ my_function <- function(x) {
 # have to include the brackets ({ and }).
 # my_function <- function(x) 3 * x + 1
 
+my_function(1)
+my_function(2)
+my_function(3)
+
 # This isn't always a great idea - it can introduce bugs.
 # One of the most famous examples of this was the Apple "goto fail" bug. They
 # accidently duplicated a line of code, but because the statements weren't

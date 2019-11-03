@@ -1,5 +1,7 @@
 # Solution 5
 
+library(tidyverse)
+
 set.seed(20191105)
 
 df <- tibble::tibble(
