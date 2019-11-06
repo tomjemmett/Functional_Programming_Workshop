@@ -57,3 +57,16 @@ plots <- plots %>%
   set_names(map2_chr(df$org_code, df$type, ~paste0(.x, "_type_", .y)))
 
 plots
+
+# an alternative way of achieving this is to create a new column that contains
+# the generated plot: because pmap requires a list of data items to iterate over
+# create a new list containing the required items.
+  mutate(plot = pmap(list(data, org_code, type),
+                     ae_attendances_plot))
+# by naming the list items we don't have to have them in the same order as the 
+# function expects
+df %>%
+  mutate(plot = pmap(list(org_code = org_code,
+                          type = type,
+                          data = data),
+                     ae_attendances_plot))
